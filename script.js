@@ -20,9 +20,9 @@ document.body.addEventListener('pointermove', ({ x, y }) => {
 
 document.body.addEventListener('pointerenter', () => {
    gsap.to('.project', { clipPath: 'inset(0%)', duration: 0.4 })
-   gsap.to('.project >*', { scale: 1, duration: 0.4 })
+   gsap.to('.project >*', { scale: 1,yPercent: -0, duration: 0.4 })
 })
 document.body.addEventListener('pointerleave', () => {
    gsap.to('.project', { clipPath: 'inset(50%)', duration: 0.4 })
-   gsap.to('.project >*', { scale: 1.2, duration: 0.4 })
+   gsap.to('.project >*', { scale: 1.2, yPercent: -20, duration: 0.4 })
 })
